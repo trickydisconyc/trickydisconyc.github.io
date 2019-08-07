@@ -1,0 +1,196 @@
+body {
+  background-image: linear-gradient(130deg, #ff95ff 3%, #687cf5 30%, #6950cd 65%);
+  /* background-image: linear-gradient(to bottom right, #ffbcff, #687cf5); */
+  min-height: 100vh;
+  width: 100%;
+  font-family: 'Work Sans', sans-serif;
+}
+
+p, a {
+  font-size: 30px;
+}
+
+a {
+  color: #ff7cc0;
+}
+
+a:hover {
+  opacity: .8;
+}
+
+
+.content {
+  max-width: 640px;
+  margin: auto;
+  font-size: 30px;
+  font-weight: 700;
+  padding: 40px 20px;
+  color: #ff7cc0;
+  z-index: 1;
+  position: relative;
+}
+
+@media screen and (min-width: 767px) {
+  p, a {
+    font-size: 48px;
+  }
+}
+
+.noise {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity: .8;
+  height: 100%;
+  position: 0;
+}
+
+.bubble-word{
+  display: flex;
+}
+
+.tricky {
+  margin-top: -100px;
+}
+
+.disco {
+  margin-top: -200px;
+  margin-left: 70px;
+}
+
+.letter {
+  width: 100px;
+  margin: 0 -5px 0;
+}
+
+.t {
+  margin-top: 250px;
+}
+
+.r {
+  margin-top: 200px;
+}
+
+.i {
+  margin: 150px -20px 0;
+}
+
+.c {
+  margin-top: 100px;
+}
+
+.k {
+  margin-top: 50px;
+}
+
+.y {
+  margin-top: 0;
+}
+
+.d {
+  margin-top: 200px;
+}
+
+.i-2 {
+  margin-top: 150px;
+}
+
+.s {
+  margin-top: 100px;
+}
+
+.c-2 {
+  margin-top: 50px;
+}
+
+.o {
+  margin-top: 0;
+}
+
+.floating{
+	animation-name: floating;
+	-webkit-animation-name: floating;
+
+	animation-duration: 2s;	
+	-webkit-animation-duration: 2s;
+
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@keyframes floating {
+	0% {
+    transform: translateY(0%);
+    opacity: 1;	
+	}
+	50% {
+    transform: translateY(2%);
+    transform: rotate3d(1, 1, 1, 10deg);
+    opacity: .75;
+
+	}	
+	150% {
+    transform: translateY(0%);
+    transform: rotate(0deg);
+    opacity: 1;
+	}			
+}
+
+@-webkit-keyframes floating {
+	0% {
+    -webkit-transform: translateY(0%);
+	}
+	50% {
+    -webkit-transform: translateY(2%);
+	
+	}	
+	100% {
+		-webkit-transform: translateY(0%);
+	}			
+}
+
+.floating-slow{
+	animation-name: floating-slow;
+	-webkit-animation-name: floating-slow;
+
+	animation-duration: 2s;	
+  -webkit-animation-duration: 2s;
+  
+  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@keyframes floating-slow {
+	0% {
+    transform: translateY(0%);
+    opacity: 1;	
+	}
+	50% {
+    transform: translateY(2%);	
+    transform: rotate3d(1, 1, 1, 10deg);
+    opacity: .8;
+	}	
+	150% {
+    transform: translateY(0%);
+    opacity: 1;
+	}			
+}
+
+@-webkit-keyframes floating {
+	0% {
+		-webkit-transform: translateY(0%);	
+	}
+	50% {
+    -webkit-transform: translateY(2%);
+    transform: rotate3d(1, 1, 1, 10deg);	
+	}	
+	100% {
+		-webkit-transform: translateY(0%);
+	}			
+}
+
