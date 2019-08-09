@@ -19,7 +19,7 @@ a:hover {
   max-width: 640px;
   margin: auto;
   font-weight: 700;
-  padding: 40px 0 100px 0   ;
+  padding: 0 0 100px 0;
   color: #ff7cc0;
   z-index: 1;
   position: relative;
@@ -49,6 +49,10 @@ a:hover {
 
   .body-text--small {
     font-size: 30px;
+  }
+
+  .content {
+    padding: 40px 0 100px 0;
   }
 }
 
