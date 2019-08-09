@@ -1,5 +1,6 @@
 body {
   background-image: url('../images/bg.png');
+  background-size: contain;
   width: 100%;
   font-family: 'Work Sans', sans-serif;
   padding: 20px;
@@ -47,6 +48,10 @@ a:hover {
 @media screen and (min-width: 767px) {
   .body-text {
     font-size: 54px;
+  }
+
+  body {
+    background-size: auto;
   }
 
   .body-text--small {
