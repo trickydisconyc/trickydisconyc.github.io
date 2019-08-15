@@ -45,6 +45,17 @@ a:hover {
   line-height: 1;
 }
 
+/* special weirdo css for margin on safari */
+@media not all and (min-resolution:.001dpcm) { 
+  @media screen and (max-width: 767px){
+    .disco {
+      margin-top: -240px !important;
+      margin-left: 70px;
+    }
+  }
+}
+
+
 @media screen and (min-width: 767px) {
   .body-text {
     font-size: 54px;
